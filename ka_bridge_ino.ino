@@ -10,6 +10,8 @@
 #include <Servo.h>
 Servo servo;
 Servo servo1;
+Servo servo2;
+Servo servo3;
 
 
 #define IN_PACK_MAX_SIZE (10) // ns, proc, and eight more bytes for args
@@ -182,8 +184,19 @@ void dispatchProc() {
         case 4: // write
           servo1.write(readByte());
           break;
+        case 5: // attach
+          servo2.attach(readByte());
+          break;
+        case 6: // write
+          servo2.write(readByte());
+          break;
+        case 7: // attach
+          servo3.attach(readByte());
+          break;
+        case 8: // write
+          servo3.write(readByte());
+          break;
       }
       break;
   }
 }
-

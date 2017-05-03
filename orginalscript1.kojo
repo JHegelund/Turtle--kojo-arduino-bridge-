@@ -32,7 +32,6 @@ setPenColor(purple)
 def action(code: String) {
     interpret(code); println(code)
     command(code)
- 
 }
 
 val cmd = Map(
@@ -57,14 +56,18 @@ val panel = trans(-width / 2, -height / 2) * scale(1.4) -> VPics(
         button("forward2"),
         button("right2"),
         button("hop2"),
-        PicShape.button(s"erase($fdStep2)") { action(eraseCmds(fdStep2)) }
+        PicShape.button(s"erase($fdStep2)") { action(eraseCmds(fdStep2)) },
+        PicShape.button(s"grab()") { command(s"grab()"); println(s"grab()") }
+        
     ),
     HPics(
+        
         button("left1"),
         button("forward1"),
         button("right1"),
         button("hop1"),
-        PicShape.button(s"erase($fdStep)") { action(eraseCmds(fdStep)) }
+        PicShape.button(s"erase($fdStep)") { action(eraseCmds(fdStep)) },
+        PicShape.button(s"release()") { command(s"release()"); println(s"release()") }
     )
 )
 
@@ -72,3 +75,4 @@ draw(panel)
 println("// Paste the generated program below into the script editor")
 println("// and run it -- to reproduce your drawing")
 println("clear()")
+

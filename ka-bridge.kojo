@@ -294,7 +294,16 @@ object Servo {
         //                        sz,ns,cmd,arg1
         writeArray(command)
     }
-
+    def attach2(pin: Byte) {
+        val command = Array[Byte](3, 2, 5, pin)
+        //                        sz,ns,cmd,arg1
+        writeArray(command)
+    }
+    def attach3(pin: Byte) {
+        val command = Array[Byte](3, 2, 7, pin)
+        //                        sz,ns,cmd,arg1
+        writeArray(command)
+    }
     def write(angle: Int) {
         val command = Array[Byte](3, 2, 2, angle.toByte)
         //                        sz,ns,cmd,arg1
@@ -302,6 +311,16 @@ object Servo {
     }
     def write1(angle: Int) {
         val command = Array[Byte](3, 2, 4, angle.toByte)
+        //                        sz,ns,cmd,arg1
+        writeArray(command)
+    }
+     def write2(angle: Int) {
+        val command = Array[Byte](3, 2, 6, angle.toByte)
+        //                        sz,ns,cmd,arg1
+        writeArray(command)
+    }
+    def write3(angle: Int) {
+        val command = Array[Byte](3, 2, 8, angle.toByte)
         //                        sz,ns,cmd,arg1
         writeArray(command)
     }
