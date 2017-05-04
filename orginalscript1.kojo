@@ -15,6 +15,7 @@ val sBgColor = "white"
 var step = 0
 var time = 0
 
+
    
 // End tweak region
 
@@ -30,8 +31,12 @@ setBackground(bgColor)
 setPenColor(purple)
 
 def action(code: String) {
-    interpret(code); println(code)
-    command(code)
+  
+    new Thread(new Runnable{def run(){ interpret(code); println(code)}
+}).start
+  new Thread(new Runnable{def run(){ command(code)}
+  }).start
+    
 }
 
 val cmd = Map(
