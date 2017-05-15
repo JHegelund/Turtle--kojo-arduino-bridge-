@@ -2,7 +2,7 @@
 var k = 100/9
 
 // Forward value
-var l = 50
+var l = 40
 
 // Grab'n'release value
 var m = 500
