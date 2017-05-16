@@ -7,8 +7,7 @@ A bridge between the Kojo software and the Arduino Oddbot to control the Oddbot 
 In order to have this project up and running, the instructions for Kojo ka-bridge needs to be done for the arduino.
 
 ### Prerequisites
-
-
+<img width="500" alt="arduino" src="https://cloud.githubusercontent.com/assets/8859812/26100977/d1049164-3a2f-11e7-8d33-6d886a228633.png">
 
 ## The Project
 
