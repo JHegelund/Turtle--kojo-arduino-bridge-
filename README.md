@@ -8,6 +8,8 @@ In order to have this project up and running, Kojo and Arduino IDE 1.0.5 is need
 
 ### Prerequisites
 
+Set up the Arduino board for the Oddbot like the picture below.
+
 <img width="500" alt="arduino" src="https://cloud.githubusercontent.com/assets/8859812/26100977/d1049164-3a2f-11e7-8d33-6d886a228633.png">
 
 ## The Project
